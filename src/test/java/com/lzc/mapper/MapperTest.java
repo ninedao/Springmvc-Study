@@ -17,8 +17,7 @@ public class MapperTest {
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringApplicationConfig.class);
         FileSystemService fileSystemService = context.getBean("fileSystemService", FileSystemService.class);
         List<FileSystem> lists = fileSystemService.getFileSystemList();
-        for(int i = 0; i < 10; i++){
-            System.out.println(lists.get(i));
-        }
+        System.out.println(lists);
+
     }
 }

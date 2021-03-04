@@ -28,10 +28,10 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan(basePackages = "com.lzc")
+//@ComponentScan(basePackages = "com.lzc")
 @PropertySource("classpath:properties/jdbc.properties")
 @EnableTransactionManagement
-@MapperScan(basePackages="com.lzc.mapper")
+//@MapperScan(basePackages="com.lzc.mapper")
 public class SpringApplicationConfig {
     //final static Logger logger = LoggerFactory.getLogger(MyApp1.class);
     @Value("${jdbc.driver}")
